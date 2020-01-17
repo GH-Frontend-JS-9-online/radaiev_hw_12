@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<header>
+		<div class="header_wrapper">
+			<div class="logo">
+				<img src="img/logo/Inteligentny_obiekt_wektorowy.png" alt="logo">
+			</div>
+			<div class="widget">
+				<div class="widget_add">
+					<button>Add<span>+</span></button>
+				</div>
+				<div class="widget_search">
+					<button><img src="img/widget/magnify_(1).png" alt="search"></button>
+				</div>
+				<div class="widget_bell">
+					<button><img src="img/widget/bell-outline.png" alt="bell"></button>
+				</div>
+				<div class="widget_user">
+					<img src="img/widget/photo-1457084882212-4a6bb2240588.png" alt="photo user">
+					<button><img src="img/widget/chevron-down_(1).png" alt=""></button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="sidebar">
+			<div class="sidebar_wrapper">
+				<div class="sidebar_home item">
+					<button><i class="icon-home"></i></button>
+				</div>
+				<div class="sidebar_menu item">
+					<button><i class="icon-navicon"></i></button>
+				</div>
+				<div class="sidebar_graphs item">
+					<button><i class="icon-line-chart"></i></button>
+				</div>
+				<div class="sidebar_messages item">
+					<button id="iconLetter"><i class="icon-envelop"></i></button>
+				</div>
+				<div class="sidebar_contacts item">
+					<button id="iconUser"><i class="icon-users"></i></button>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+
+			<div class="popup">
+				<div class="users">
+					<div class="overlay_menu_btn_close" id="closePopup"></div>
+					<h2>Users</h2>
+					<table class="table" id="btnTableUsers">
+						<tr>
+							<th>Name</th>
+							<th>Email</th>
+						</tr>
+					</table>
+					<div class="users_inner">
+						<button id="createNewChat" >Creat chat with</button> <span class="Recipient"></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="signUp">
+
+				<h2>Log in</h2>
+
+				<form name="form" class="form">
+					<input class="email" type="email" name="email" placeholder="Email">
+					<input class="password" type="password" name="password" placeholder="Password">
+
+					<p class="formError" id="formError"></p>
+					<input class="btnSignUp" type="button" name="btnLogIn" value="Log in" id="btnLogIn">
+				</form>
+
+			</div>
+			
+
+			<div class="inner">
+				
+				<div class="body_header">
+					<div class="body_header_widget">
+						<div class="body_header_widget_inbox item"><button><i class="icon-download2"></i>Inbox</button></div>
+						<div class="body_header_widget_sent item"><button><i class="icon-send"></i>Sent</button></div>
+						<div class="body_header_widget_trash item"><button><i class="icon-bin2"></i>Trash</button></div>
+					</div>
+					<div class="body_header_filter">
+						<span>Filter messages:</span>
+						<button>Date<img src="img/widget/chevron-down_(1).png" alt=""></button>
+					</div>
+				</div>
+
+				<div class="messenger">
+					<div class="messenger_contacts">
+						
+						<ul class="aside" id="buttons">
+
+
+						</ul>
+
+						<div class="messenger_contacts_new-coversation">
+							<a class="btn_new-coversation"><span>+</span>New coversation</a>
+						</div>
+					</div>
+
+					<div class="messenger_chat">
+
+						<div class="messenger_chat_inner">
+							<div class="messenger_chat_sender">
+								<div class="messenger_chat_sender_mess">
+									<div class="messenger_chat_sender_mess_text">
+										Lorem ipsum.
+									</div>
+									<div class="messenger_chat_sender_avatar">
+										<img src="img/messenger/avatar.png" alt="">
+									</div>
+								</div>
+								<div class="messenger_chat_sender_mess_date">
+									4 April 2016, 5:32 PM
+								</div>
+							</div>
+
+							<div class="messenger_chat_recipient">
+							
+								<div class="messenger_chat_recipient_mess">
+
+									<div class="messenger_chat_recipient_avatar">
+										<img src="img/messenger/avatar.png" alt="">
+									</div>
+									<div class="messenger_chat_recipient_mess_text">
+										Lorem ipsum dolor.  Lorem ipsum dolor sit amet.
+									</div>
+								</div>
+								<div class="messenger_chat_recipient_mess_date">
+									4 April 2016, 5:32 PM
+								</div>
+							</div> 
+						</div>
+
+						<div class="messenger_chat_write_message">
+					
+							  <div class="messenger_chat_write_message_textarea" contenteditable="true">
+	    						Write a message
+	 						 </div>
+						</div>
+					</div>
+
+					<div class="messenger_interlocutor-info">
+						<div class="messenger_interlocutor-info_photo">
+							<img src="img/messenger/avatar.png" alt="">
+						</div>
+						<div class="messenger_interlocutor-info_name">
+							Lyall Roach
+						</div>
+						<div class="messenger_interlocutor-info_position">
+							UX/US Designer
+						</div>
+						<div class="messenger_interlocutor-info_specific">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
+						</div>
+						<div class="messenger_interlocutor-info_email">
+							<span>Email</span>
+							Lyallroach@gmail.com
+						</div>
+						<div class="messenger_interlocutor-info_phone">
+							<span>Phone</span>
+							+48 500 400 300
+						</div>
+						<div class="messenger_interlocutor-info_adress">
+							<span>Adress</span>
+							65 Lorem St. Warsaw. PL
+						</div>
+						<div class="messenger_interlocutor-info_organization">
+							<span>Organization</span>
+							Symu.co
+						</div>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</div>
+	</main>
+
+	<script type="module" src="js/chat.js"></script>
+</body>
+</html>
