@@ -265,11 +265,6 @@ function test() {
 
 }
 
-chat.onclick = () => {
-	test();
-}
-
-
 
 
 // == get messages form threads aside for chat == 
@@ -298,9 +293,6 @@ function getAllThreads() {
 	}).then(response => response.json());
 }
 
-getAllthrads.onclick = async () => {
-	getAllThreads().then(data => console.log(data))
-}
 
 // == Show users ==
 function showUsers() {
@@ -350,9 +342,6 @@ function sendMessage(idThread, message) {
 	}).then(res => res.json());
 }
 
-send.onclick = () => {
-	sendMessage().then(data => console.log(data));
-};
 
 // == get text form form == 
 async function getText(event) {
@@ -508,9 +497,6 @@ function getMessFromThread(id) {
 	}).then(res => res.json());
 }
 
-getMessages.onclick = async () => {
-	await getMessFromThread(idNewThreadGlobal).then(data => console.log(data))
-}
 
 // == create info into chat == 
 async function getIdThreadFromAside(event) {
